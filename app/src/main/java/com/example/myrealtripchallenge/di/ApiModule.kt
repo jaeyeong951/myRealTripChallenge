@@ -6,17 +6,13 @@ import com.example.myrealtripchallenge.repository.JsoupRepository
 import com.example.myrealtripchallenge.repository.JsoupRepositoryImpl
 import com.example.myrealtripchallenge.repository.RssRepository
 import com.example.myrealtripchallenge.repository.RssRepositoryImpl
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
-import okhttp3.Response
-import okhttp3.ResponseBody
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import retrofit2.converter.simplexml.SimpleXmlConverterFactory
-import java.net.URLDecoder
 
 
 val apiModule = module {

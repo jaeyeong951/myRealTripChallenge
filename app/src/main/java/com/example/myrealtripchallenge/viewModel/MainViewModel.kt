@@ -17,12 +17,6 @@ import io.reactivex.schedulers.Schedulers
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
-import java.net.URLDecoder
-import java.net.URLEncoder
-import java.nio.ByteBuffer
-import java.nio.CharBuffer
-import java.nio.charset.Charset
-import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.TimeUnit
 
 class MainViewModel (private val rssRepository: RssRepository, private val jsoupRepository: JsoupRepository) : ViewModel(){
