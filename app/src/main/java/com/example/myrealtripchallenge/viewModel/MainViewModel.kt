@@ -113,7 +113,7 @@ class MainViewModel (private val rssRepository: RssRepository, private val jsoup
             }
             howToKnowLastNews++
             Log.e("현재사이즈",howToKnowLastNews.toString())
-            if(howToKnowLastNews == newsSize-1){
+            if(howToKnowLastNews == newsSize-2){
                 _isRssDataLoaded.call()
             }
         },indicator = true)

@@ -1,6 +1,7 @@
 package com.example.myrealtripchallenge.ui
 
 import android.graphics.Color
+import android.graphics.Point
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -31,6 +32,7 @@ class MainFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         news_list_pull.setProgressBackgroundColorSchemeColor(Color.WHITE)
         news_list_pull.setColorSchemeColors(Color.BLACK)
         news_list_pull.setOnRefreshListener {
@@ -50,5 +52,4 @@ class MainFragment : Fragment(){
         news_list_recycler.adapter = adapter
         news_list_recycler.layoutManager = layoutManager
     }
-
 }

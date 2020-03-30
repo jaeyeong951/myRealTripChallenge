@@ -25,6 +25,7 @@ class NewsListAdapter(val viewModel: MainViewModel) : RecyclerView.Adapter<NewsL
             viewModel.getNewsByPosition(position).let{
                 val url = it.link
                 holder.view.news_title.text = it.title
+
                 holder.view.news_description.text = it.description
                 holder.view.news_keyword_1.text = it.keyWord1
                 holder.view.news_keyword_2.text = it.keyWord2
@@ -37,5 +38,6 @@ class NewsListAdapter(val viewModel: MainViewModel) : RecyclerView.Adapter<NewsL
 
         }
     }
+
 
 }
